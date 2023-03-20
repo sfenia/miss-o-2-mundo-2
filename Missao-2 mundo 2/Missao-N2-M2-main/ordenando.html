@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ordenando - Missão Prática</title>
+		<script src="./ordenando.js"></script>
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+		crossorigin="anonymous">
+		<link rel="stylesheet" href="./c.css" />
+	</head>
+
+	<body>
+
+		<nav class="navbar-xs navbar-expand navbar-dark bg-dark">
+			<a class="navbar-brand mx-sm-3" href="./home.html">Culinária</a>
+			<a class="navbar-brand mx-sm-3" href="./ordenando.html">Ordenando</a>
+			<a class="navbar-brand mx-sm-3" href="./usuarios.html">Usuarios</a>
+		</nav>
+
+		<div id="div_centro">
+			<input id="valor" placeholder="valor"></input>
+			<button onclick="add()" class="button_s">adicionar</button>
+
+			<select id="select_ord">
+				<option value="bubble_s">Bubble Sort</option>
+				<option value="selection_s">Selection Sort</option>
+				<option value="quick_s">Quick Sort</option>
+			</select>
+
+			<button onclick="ordenar()" class="button_s">Ordenar</button>
+			<button onclick="misturar()" class="button_s">Misturar</button>
+			<ul id="valores">
+			</ul>
+		</div>
+
+	</body>
+
+</html>
